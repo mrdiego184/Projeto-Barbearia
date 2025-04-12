@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbearia Jeová</title>
+  <title>Dom Severo Barbearia</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="logobranco.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lato&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -20,16 +25,19 @@
   <!-- Header fixo -->
   <header>
     <div class="container nav">
-      <h1 class="logo">BARBEARIA JEOVÁ</h1>
-      <nav>
+      <img src="logo.png" class="logo">
+      <nav class="cabecalho">
+        
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#inicio">INÍCIO</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
         </ul>
+      
       </nav>
-      <a href="#contato" class="btn-contato">CONTATO</a>
+      <a href="#contato" class="btn-contato">AGENDE SEU CORTE!</a>
+      <img src="poste.gif" width="30px" alt="Gif de Poste Barbearia">
     </div>
   </header>
 
@@ -37,28 +45,30 @@
   <section id="inicio" class="tela-inicial">
     <div class="container tela-inicial-content">
       <div class="texto">
-        <h1>Barbearia Jeová</h1>
+        <img id="logobranco" src="logobranco.png" width="500px">
+        <div class="textoinicio"> 
         <p>Estilo e tradição para o homem moderno</p>
         <a href="#servicos" class="btn-verde">VER SERVIÇOS</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- sobre-->
-  <section id="sobre" class="sobre">
+  <section id="sobre" class="sobre hidden">
     <div class="container">
       <p class="highlight green">CONHEÇA-NOS</p>
-      <h2>Sobre a Barbearia Jeová</h2>
-      <p>Somos uma barbearia comprometida com estilo, tradição e excelência no atendimento. Nossa missão é oferecer uma experiência única para cada cliente.</p>
+      <h2>SOBRE A BARBEARIA DOM SEVERO</h2>
+      <p>Fundada em 2010, fomos crescendo e conquistando clientes em Guarulhos com nossa qualidade de atendimento, compromisso e respeito. Sendo nosso valores baseados em estilo, tradição e excelência no atendimento, nossa missão é oferecer uma experiência única para cada cliente.</p>
     </div>
   </section>
 
-  <section class="hero">
+  <section class="hero hidden">
     <div class="container hero-content">
       <div class="hero-text">
         <p class="highlight green">TRADICIONAL E ESTILOSA</p>
         <h2>A experiência do homem moderno</h2>
-        <p>Na Barbearia Jeová, unimos tradição e estilo para cuidar da sua imagem.</p>
+        <p>Na Dom Severo, unimos tradição e estilo para cuidar da sua imagem.</p>
         <a href="#contato" class="link">Entre em contato</a>
       </div>
       <img src="./img/cadeira-2.jpg" alt="Cadeira de barbearia" class="hero-img">
@@ -67,10 +77,10 @@
 
 
   <!-- Serviços -->
-  <section id="servicos" class="servicos">
+  <section id="servicos" class="servicos hidden">
     <div class="container">
       <p class="highlight green">CUIDADO MASCULINO</p>
-      <h2>Estilo e sofisticação para você</h2>
+      <h2>ESTILO E SOFISTICAÇÃO PARA VOCê</h2>
       <div class="cards">
         <div class="card">
           <img src="./img/cortecabelo.jpg" alt="Corte de cabelo">
@@ -92,10 +102,10 @@
   </section>
 
   <!-- Galeria -->
-  <section id="galeria" class="galeria">
+  <section id="galeria" class="galeria hidden">
     <div class="container">
       <p class="highlight green">ESTILO EM CADA CORTE</p>
-      <h2>Veja a transformação do visual</h2>
+      <h2>VEJA A TRANSFORMAÇÃO DO VISUAL</h2>
       <div class="galeria-grid">
         <img src="./img/galeria1.jpg" alt="Transformação 1">
         <img src="./img/galeria-2.jpg" alt="Transformação 2">
@@ -105,31 +115,27 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="contato">
+  <section id="contato" class="hidden">
     <div class="container contato-grid">
-      <div class="form">
-        <p class="highlight green">ENTRE EM CONTATO</p>
+      <div class="contato">
+        <p class="highlight green">AGENDE SEU CORTE OU ENTRE EM CONTATO</p>
         <h2>Estamos aqui para te atender!</h2>
-        <form>
-          <label>Nome *</label>
-          <input type="text" placeholder="Jane Smith" required>
+        <ul class="contatos">
+          <li class="agendamento">
+              
+            <a target="_blank" href="https://sites.appbarber.com.br/barbeariadomsev-xk2l"> <img id=appbarber alt="Aplicativo Agendamento" src="https://blog.appbarber.com.br/wp-content/uploads/2024/08/site-logo.png">
+            </a>
+          
+          </li>
 
-          <label>Email *</label>
-          <input type="email" placeholder="email@website.com" required>
+          <li class="zap">
+              <a target="_blank" href="https://wa.me/5511991727701?text=Ol%C3%A1%2C%20quero%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Barbearia%20Dom%20Severo">
+                  <img alt="Link Contato Whatsapp" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png">
+              </a>
 
-          <label>Telefone *</label>
-          <input type="text" placeholder="(11) 99999-9999" required>
+          </li>
 
-          <label>Mensagem</label>
-          <textarea placeholder="Escreva sua mensagem..."></textarea>
-
-          <label class="checkbox">
-            <input type="checkbox" required>
-            Autorizo o uso das informações para retorno da solicitação.
-          </label>
-
-          <button type="submit">ENVIAR</button>
-        </form>
+        </ul>
       </div>
 
       <div class="info">
@@ -145,7 +151,7 @@
         </iframe>
         
         <p><strong>Email:</strong><br>
-          <a href="mailto:fernandaoalvfy@gmail.com">fernandaoalvfy@gmail.com</a>
+          <a href="mailto:fernandaoalvfy@gmail.com">barbeariadomsevero@gmail.com</a>
         </p>
         <p><strong>Localização:</strong><br>
           <a href="#">Guarulhos, SP - Brasil</a>
@@ -161,10 +167,13 @@
 
   <!-- Rodapé -->
   <footer>
-    <div class="container">
-      <a href="#">Agendar Consulta</a>
-      <a href="#">Cadastro Completo</a>
+    <div class="rodape">
+      <img width="90px" src="logobranco.png">
+      <h4>Todos os direitos reservados.</h4>
+     
     </div>
   </footer>
 </body>
+  <!-- implenta o script para animações das sections -->
+<script src="script.js"> </script> 
 </html>
