@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Jeová</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section[id] {
+      scroll-margin-top: 100px; /* Ajusta a distância do topo ao usar âncoras com header fixo */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header fixo -->
+  <header>
+    <div class="container nav">
+      <h1 class="logo">BARBEARIA JEOVÁ</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </nav>
+      <a href="#contato" class="btn-contato">CONTATO</a>
+    </div>
+  </header>
+
+  <!-- Tela Inicial -->
+  <section id="inicio" class="tela-inicial">
+    <div class="container tela-inicial-content">
+      <div class="texto">
+        <h1>Barbearia Jeová</h1>
+        <p>Estilo e tradição para o homem moderno</p>
+        <a href="#servicos" class="btn-verde">VER SERVIÇOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- sobre-->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <p class="highlight green">CONHEÇA-NOS</p>
+      <h2>Sobre a Barbearia Jeová</h2>
+      <p>Somos uma barbearia comprometida com estilo, tradição e excelência no atendimento. Nossa missão é oferecer uma experiência única para cada cliente.</p>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="highlight green">TRADICIONAL E ESTILOSA</p>
+        <h2>A experiência do homem moderno</h2>
+        <p>Na Barbearia Jeová, unimos tradição e estilo para cuidar da sua imagem.</p>
+        <a href="#contato" class="link">Entre em contato</a>
+      </div>
+      <img src="./img/cadeira-2.jpg" alt="Cadeira de barbearia" class="hero-img">
+    </div>
+  </section>
+
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <p class="highlight green">CUIDADO MASCULINO</p>
+      <h2>Estilo e sofisticação para você</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./img/cortecabelo.jpg" alt="Corte de cabelo">
+          <h3>Corte de cabelo &rsaquo;</h3>
+          <p>Transforme seu visual com um corte de cabelo moderno.</p>
+        </div>
+        <div class="card">
+          <img src="img/aparandobarba.jpg" alt="Aparação de barba">
+          <h3>Aparação de barba &rsaquo;</h3>
+          <p>Mantenha sua barba impecável e bem cuidada.</p>
+        </div>
+        <div class="card">
+          <img src="./img/hidratar.jpg" alt="Tratamento capilar">
+          <h3>Tratamento capilar &rsaquo;</h3>
+          <p>Revitalize seus cabelos com nossos tratamentos especializados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <p class="highlight green">ESTILO EM CADA CORTE</p>
+      <h2>Veja a transformação do visual</h2>
+      <div class="galeria-grid">
+        <img src="./img/galeria1.jpg" alt="Transformação 1">
+        <img src="./img/galeria-2.jpg" alt="Transformação 2">
+        <img src="./img/galeria3.jpg" alt="Transformação 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container contato-grid">
+      <div class="form">
+        <p class="highlight green">ENTRE EM CONTATO</p>
+        <h2>Estamos aqui para te atender!</h2>
+        <form>
+          <label>Nome *</label>
+          <input type="text" placeholder="Jane Smith" required>
+
+          <label>Email *</label>
+          <input type="email" placeholder="email@website.com" required>
+
+          <label>Telefone *</label>
+          <input type="text" placeholder="(11) 99999-9999" required>
+
+          <label>Mensagem</label>
+          <textarea placeholder="Escreva sua mensagem..."></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" required>
+            Autorizo o uso das informações para retorno da solicitação.
+          </label>
+
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+
+      <div class="info">
+        <div class="mapa">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6073289622146!2d-46.5389525!3d-23.5109013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef540bd76a2d9%3A0x7a2a798b18c58eeb!2sR.%20Cachoeira%2C%20315%20-%20Jardim%20Rosa%20de%20Franca%2C%20Guarulhos%20-%20SP%2C%2007080-000!5e0!3m2!1spt-BR!2sbr!4v1712949637756!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
+        <p><strong>Email:</strong><br>
+          <a href="mailto:fernandaoalvfy@gmail.com">fernandaoalvfy@gmail.com</a>
+        </p>
+        <p><strong>Localização:</strong><br>
+          <a href="#">Guarulhos, SP - Brasil</a>
+        </p>
+        <p><strong>Horário de atendimento:</strong><br>
+          Seg a Sex: 9h – 22h<br>
+          Sábado: 9h – 18h<br>
+          Domingo: 9h – 12h
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <a href="#">Agendar Consulta</a>
+      <a href="#">Cadastro Completo</a>
+    </div>
+  </footer>
+</body>
+</html>
