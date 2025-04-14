@@ -433,14 +433,44 @@
     margin-top: 10%;
     font-size: 1rem;
     text-align: center;
-  }
-    .mapa iframe{
+  .info {
+    display: flex;
+    flex-direction: column; /* coloca o mapa abaixo das infos */
+    overflow-x: hidden;     /* evita scroll lateral */
     width: 100%;
   }
-    .mapa{
-    font-size: 0.8rem;
+
+  .mapa {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.7rem;
   }
-   }
+
+  .mapa iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textoinicio{
+    text-align: center;
+  }
+}
+  
   /* javascript */
   .hidden{
     opacity: 0;
