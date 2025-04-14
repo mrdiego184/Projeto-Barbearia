@@ -434,6 +434,12 @@
     font-size: 1rem;
     text-align: center;
   }
+    .mapa iframe{
+    width: 100%;
+  }
+    .mapa{
+    font-size: 0.8rem;
+  }
    }
   /* javascript */
   .hidden{
