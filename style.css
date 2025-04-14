@@ -41,6 +41,11 @@
     font-style: normal;
     font-size: 1.3rem;
 }
+/* Header em "hamburguer" para telas de smartphones */
+.menu{
+  display: none;
+}
+  
   .nav {
     display: flex;
     justify-content: space-between;
@@ -91,6 +96,22 @@
     font-weight: 400;
     font-style: normal;
     color: #d4af37;
+  }
+  .insta{
+    color: #d4af37;
+    flex-direction: column;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+  }
+  #insta{
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .insta img:hover{
+    transform: scale(1.2);
   }
   /* Hero Section */
   
@@ -226,7 +247,9 @@
   
   .contato {
     padding: 60px 0;
-    color: white;
+    color:white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
   }
   
   .contato-grid {
@@ -249,7 +272,7 @@
     transition: transform 0.3s ease-in-out;
   }
   .zap img{
-    width: 200px;
+    width: 130px;
     transition: transform 0.3s ease-in-out;
   }
   .contatos img:hover{
@@ -269,6 +292,8 @@
   }
   .mapa{
     color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
   }
   
   /* Footer */
@@ -362,15 +387,53 @@
     }
     .nav{
       display:flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
     .agendamento img{
       width: 150px;
     }
     .zap img{
-      width: 140px;
+      width: 100px;
     }
+    .btn-contato{
+      font-size: 15px;
+    }
+    #poste{
+      margin-top: 2px;
+      width: 20px;
+    }
+    #logobranco {
+      width: 480px;
+    }
+    .cabecalho {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+   }
+   .cabecalho ul{
+      flex-direction: column;
+      gap: 10px;
+   }
+   .cabecalho.show{
+    display: flex;
+   }
+  .menu{
+    display: block;
+    background-color: white;
+    border: none;
+    color: #d4af37;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .logo{
+    display: none;
+  }
+  .insta{
+    margin-top: 10%;
+    font-size: 1rem;
+    text-align: center;
+  }
    }
   /* javascript */
   .hidden{
@@ -385,4 +448,3 @@
     transition: all 1.5s;
     transform: translateX(0%);
 }
-  
