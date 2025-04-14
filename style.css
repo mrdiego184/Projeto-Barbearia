@@ -436,8 +436,8 @@
   }
   .info {
     display: flex;
-    flex-direction: column; /* coloca o mapa abaixo das infos */
-    overflow-x: hidden;     /* evita scroll lateral */
+    flex-direction: column; 
+    overflow-x: hidden;     
     width: 100%;
   }
 
