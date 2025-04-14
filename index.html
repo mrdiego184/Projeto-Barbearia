@@ -26,19 +26,30 @@
   <header>
     <div class="container nav">
       <img src="logo.png" class="logo">
-      <nav class="cabecalho">
-        
+      <nav id=cabecalho class="cabecalho">
+
         <ul>
           <li><a href="#inicio">INÍCIO</a></li>
           <li><a href="#sobre">SOBRE</a></li>
           <li><a href="#servicos">SERVIÇOS</a></li>
           <li><a href="#galeria">GALERIA</a></li>
         </ul>
-      
       </nav>
+      <!---->
+      <button class="menu" id="menu">&#9776;</button>
       <a href="#contato" class="btn-contato">AGENDE SEU CORTE!</a>
-      <img src="poste.gif" width="30px" alt="Gif de Poste Barbearia">
+      <img id=poste src="poste.gif" width="30px" alt="Gif de Poste Barbearia">
     </div>
+
+    <script>
+      const btn = document.getElementById('menu');
+      const cabecalho = document.getElementById('cabecalho');
+
+      btn.addEventListener('click', () => {
+       cabecalho.classList.toggle('show');
+      })
+   </script>
+
   </header>
 
   <!-- Tela Inicial -->
@@ -60,6 +71,8 @@
       <p class="highlight green">CONHEÇA-NOS</p>
       <h2>SOBRE A BARBEARIA DOM SEVERO</h2>
       <p>Fundada em 2010, fomos crescendo e conquistando clientes em Guarulhos com nossa qualidade de atendimento, compromisso e respeito. Sendo nosso valores baseados em estilo, tradição e excelência no atendimento, nossa missão é oferecer uma experiência única para cada cliente.</p>
+      
+      <a target="_blank"  href="https://www.instagram.com/barbeariadomsevero/" class="insta">ACESSE NOSSO INSTAGRAM<img src="insta.png" id=insta></a>
     </div>
   </section>
 
@@ -174,6 +187,5 @@
     </div>
   </footer>
 </body>
-  <!-- implenta o script para animações das sections -->
-<script src="script.js"> </script> 
+<script src="script.js"> </script>
 </html>
