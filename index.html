@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A barbearia tradicional e moderna mais exclusiva de Guarulhos!">
   <title>Dom Severo Barbearia</title>
-  <link rel="stylesheet" href="public/domsevero.css">
+  <link rel="stylesheet" href="../public/domsevero.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="/img/logobranco.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" href="/img/logobranco.png">
+  <link rel="shortcut icon" href="/public/logobranco.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
@@ -27,7 +26,7 @@
   <!-- Header fixo -->
   <header>
     <div class="container nav">
-      <img src="img/logo.png" alt="Logo no cabeçalho da página" class="logo">
+      <img src="../img/logo.png" alt="Logo no cabeçalho da página" class="logo">
       <nav id=cabecalho class="cabecalho">
 
         <ul>
@@ -37,10 +36,11 @@
           <li><a title="Galeria" href="#galeria">GALERIA</a></li>
         </ul>
       </nav>
+
       <!---->
       <button class="menu" id="menu">&#9776;</button>
       <a href="#contato" class="btn-contato">AGENDE SEU CORTE!</a>
-      <img id=poste src="img/poste.gif" width="30px" alt="Gif de Poste Barbearia">
+      <img id=poste src="../img/poste.gif" width="30px" alt="Gif de Poste Barbearia">
     </div>
 
     <script>
@@ -54,11 +54,23 @@
 
   </header>
 
+ <!-- POPUP -->
+  <div class="popup" id="popup" >
+    <div class="imgplanos">
+      <img src="/img/planos.png" id="imgplanos">
+      <a id="assinaraba" href="#tituloassinatura"><span class="linkpopup">ASSINE JÁ!</span></a>
+      <div class="popupfechar">
+      <button id="fechar" class="fechar"><img src="/img/x.svg" id="xicon"> FECHAR</button>
+    </div>
+        </div>
+    </div>
+  </div> 
+
   <!-- Tela Inicial -->
   <section id="inicio" class="tela-inicial">
     <div class="container tela-inicial-content">
       <div class="texto">
-        <img id="logobranco" alt="Logo da Barbearia no Centro da Página" src="img/logobranco.png" width="500px">
+        <img id="logobranco" alt="Logo da Barbearia no Centro da Página" src="../img/logobranco.png" width="500px">
         <div class="textoinicio"> 
         <p class="estilo">Estilo e tradição para o homem moderno</p>
         <a href="#servicos" class="btn-verde">VER SERVIÇOS</a>
@@ -74,7 +86,44 @@
       <h2>SOBRE A BARBEARIA DOM SEVERO</h2>
       <p>Fundada em 2010, fomos crescendo e conquistando clientes em Guarulhos com nossa qualidade de atendimento, compromisso e respeito. Sendo nosso valores baseados em estilo, tradição e excelência no atendimento, nossa missão é oferecer uma experiência única para cada cliente.</p>
       
-      <a target="_blank"  href="https://www.instagram.com/barbeariadomsevero/" class="insta">ACESSE NOSSO INSTAGRAM<img src="img/insta.png" alt="Link para Instagram" id=insta></a>
+      <a target="_blank"  href="https://www.instagram.com/barbeariadomsevero/" class="insta">ACESSE NOSSO INSTAGRAM<img src="../img/insta.png" alt="Link para Instagram" id=insta></a>
+
+      <h1 id="tituloassinatura" class="tituloassinatura"> PLANOS DE ASSINATURA</h1>
+      <p>Agora a Barbearia está com um novo e inédito sistema de assinatura! Não perca tempo, veja os planos e acesse a plataforma para fazer parte dessa nova fase da Dom Severo!</p>
+      <div class=planos>
+        <ul>
+
+          <li>
+            <h1 class="tituloassinatura one">ONE</h1>
+            <hr class="sign">
+            <p> O plano ideal para manter o seu cuidado e estilo recorrentemente. Válido para todos os dias de funcionamento da Barbearia.</p>
+            <span class="preco">R$44,90</span>
+
+            
+          </li>
+
+          <li>
+            <h1 class="tituloassinatura">SMART</h1>
+            <hr class="sign">
+            <p> A experiência mais completa da Dom Severo, exclusividade, competência e qualidade. Válido para todos os dias de funcionamento da Barbearia</p>
+            <span class="preco">R$99,90 - R$169,90</span>
+            
+            
+          </li>
+
+          <li>
+            <h1 class="tituloassinatura">LIGHT</h1>
+            <hr class="sign">
+            <p> O plano mais equilibrado, com ótimo custo benefício proporcionando uma experiência única e refinada. Válido de Segunda a Quarta-Feira.</p>
+            <span class="preco">R$89,90 - 169,90</span>
+            
+            
+          </li>
+        </ul>
+      </div>
+      <div class="assinar">
+      <span class="assine"><a target="_blank" href="https://www.cashbarber.com.br/domsevero">ASSINE AQUI!</a></span>
+    </div>
     </div>
   </section>
 
@@ -86,7 +135,7 @@
         <p>Na Dom Severo, unimos tradição e estilo para cuidar da sua imagem.</p>
         <a href="#contato" class="link">Entre em contato</a>
       </div>
-      <img src="img/fachada.jpeg" alt="Fachada da Barbearia" class="hero-img">
+      <img src="../img/fachada.jpeg" alt="Cadeira de barbearia" class="hero-img">
     </div>
   </section>
 
@@ -98,17 +147,17 @@
       <h2>ESTILO E SOFISTICAÇÃO PARA VOCê</h2>
       <div class="cards">
         <div class="card">
-          <img src="img/cortecabelo.jpg" alt="Corte de cabelo">
+          <img src="../img/cortecabelo.jpg" alt="Corte de cabelo">
           <h3>Corte de cabelo &rsaquo;</h3>
           <p>Transforme seu visual com um corte de cabelo moderno.</p>
         </div>
         <div class="card">
-          <img src="img/aparandobarba.jpg" alt="Aparação de barba">
+          <img src="../img/aparandobarba.jpg" alt="Aparação de barba">
           <h3>Aparação de barba &rsaquo;</h3>
           <p>Mantenha sua barba impecável e bem cuidada.</p>
         </div>
         <div class="card">
-          <img src="img/hidratar.jpg" alt="Tratamento capilar" class="tratamento">
+          <img src="../img/hidratar.jpg" alt="Tratamento capilar" class="tratamento">
           <h3>Tratamento capilar &rsaquo;</h3>
           <p>Revitalize seus cabelos com nossos tratamentos especializados.</p>
         </div>
@@ -122,9 +171,9 @@
       <p class="highlight green">ESTILO EM CADA CORTE</p>
       <h2>VEJA A TRANSFORMAÇÃO DO VISUAL</h2>
       <div class="galeria-grid">
-        <img src="img/galeria1.jpg" alt="Transformação 1">
-        <img src="img/galeria-2.jpg" alt="Transformação 2">
-        <img src="img/transformacao3.jpeg" alt="Transformação 3">
+        <img src="../img/galeria1.jpg" alt="Transformação 1">
+        <img src="../img/galeria-2.jpg" alt="Transformação 2">
+        <img src="../img/transformacao3.jpeg" alt="Transformação 3">
       </div>
     </div>
   </section>
@@ -138,7 +187,7 @@
         <ul class="contatos">
           <li class="agendamento">
               
-            <a target="_blank" href="https://sites.appbarber.com.br/barbeariadomsev-xk2l"> <img id=appbarber alt="Aplicativo Agendamento" src="https://blog.appbarber.com.br/wp-content/uploads/2024/08/site-logo.png">
+            <a target="_blank" href="https://www.cashbarber.com.br/domsevero"> <img id=cashbarber alt="Aplicativo Agendamento" src="https://sistemacashbarber.com.br/wp-content/uploads/2023/01/favicon-cashBarber.webp">
             </a>
           
           </li>
@@ -182,11 +231,11 @@
   <!-- Rodapé -->
   <footer>
     <div class="rodape">
-      <img width="90px" alt="Logo Branco no Rodapé" src="img/logobranco.png">
+      <img width="90px" alt="Logo Branco no Rodapé" src="../img/logobranco.png">
       <h4>&copy Todos os direitos reservados.</h4>
      
     </div>
   </footer>
 </body>
-<script src="public/script.js"> </script>
+<script src="script.js"> </script>
 </html>
